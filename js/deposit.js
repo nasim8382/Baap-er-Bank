@@ -18,4 +18,5 @@ document.getElementById('deposit-btn').addEventListener('click', () => {
     const newTotalBalance = previousTotalBalance + newDeposit;
 
     // set update main balance
+    setMoney('total-balance', newTotalBalance);
 })

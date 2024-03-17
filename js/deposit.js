@@ -11,7 +11,7 @@ document.getElementById('deposit-btn').addEventListener('click', () => {
     // set deposit update amount
     setMoney('deposit-money', totalDeposit);
 
-    // get main balance
+    // get previous main balance
     const previousTotalBalance = getMoney('total-balance');
 
     // new main balance

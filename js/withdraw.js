@@ -1,3 +1,5 @@
 document.getElementById('withdraw-btn').addEventListener('click', () => {
-    console.log('withdraw button clicked');
+    // get input field value
+    const withdrawAmount = getInputValue('withdraw-field');
+    console.log(withdrawAmount);
 })

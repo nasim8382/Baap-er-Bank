@@ -1,5 +1,5 @@
 document.getElementById('withdraw-btn').addEventListener('click', () => {
-    // get input field value
+    // get input field value (new withdraw)
     const newWithdraw = getInputValue('withdraw-field');
     
     // get previous withdraw amount
@@ -14,7 +14,7 @@ document.getElementById('withdraw-btn').addEventListener('click', () => {
         return;
     }
 
-    // summation of new and previous withdraw amount
+    // subtraction of new and previous withdraw amount
     const totalWithdraw = newWithdraw + previousWithdraw;
     
     // set withdraw update amount

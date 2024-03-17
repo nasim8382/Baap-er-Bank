@@ -1,3 +1,4 @@
+// function for get input value
 const getInputValue = (inputId) => {
     const inputField = document.getElementById(inputId);
     const inputAmount = parseFloat(inputField.value);
@@ -9,4 +10,16 @@ const getInputValue = (inputId) => {
     }
     
     return inputAmount;
+}
+
+// function for get money from cart section
+const getMoney = (id) => {
+    const moneyField = document.getElementById(id);
+    const money = parseFloat(moneyField.innerText);
+    return money;
+}
+
+const setMoney = (id, totalMoney) => {
+    const moneyField = document.getElementById(id);
+    moneyField.innerText = totalMoney;
 }
